@@ -128,3 +128,66 @@ from math import * # math 라이브러리에 있는거 다 가져옴
 print(floor(4.99)) # 내림. 4
 print(ceil(3.14)) # 올림. 4
 print(sqrt(16)) # 제곱근, 4
+
+#랜덤 함수
+#난수, 무작위의 수
+
+from random import *
+
+# print(random()) # 임의의 난수를 뽑음 (0.0 ~ 1.0 미만의 임의의 값 생성)
+# print(random() * 10) # 0.0~ 10.0 미만의 임의의 값 생성
+# print(int(random() * 10)) # int 자료형으로 감싸주면 정수로 뽑아낼 수 있다
+# print(int(random() * 10) + 1) # 1~10 이하의 임의의 값 생성
+
+# print(int(random() * 10) + 1) # 1~10 이하의 임의의 값 생성
+# print(int(random() * 10) + 1) # 1~10 이하의 임의의 값 생성
+# print(int(random() * 10) + 1) # 1~10 이하의 임의의 값 생성
+# print(int(random() * 10) + 1) # 1~10 이하의 임의의 값 생성
+# print(int(random() * 10) + 1) # 1~10 이하의 임의의 값 생성
+# print(int(random() * 10) + 1) # 1~10 이하의 임의의 값 생성
+
+# print("random으로 값 뽑기")
+# print(int(random() * 45) + 1) # 1~45까지의 임의의 값 생성
+# print(int(random() * 45) + 1) # 1~45까지의 임의의 값 생성
+# print(int(random() * 45) + 1) # 1~45까지의 임의의 값 생성
+# print(int(random() * 45) + 1) # 1~45까지의 임의의 값 생성
+# print(int(random() * 45) + 1) # 1~45까지의 임의의 값 생성
+# print(int(random() * 45) + 1) # 1~45까지의 임의의 값 생성
+
+# print("randrange로 값 뽑기")
+# print(randrange(1, 46)) # 1~45 미만의 임의의 값 생성
+
+# print("randint로 값 출력")
+# print(randint(1, 45)) # a, b 사이에 있는 랜덤 숫자를 포함하는데 양 끝 숫자를 모두 포함함(1~45 이하의 값)
+# print(randint(1, 45))
+# print(randint(1, 45))
+# print(randint(1, 45))
+# print(randint(1, 45))
+# print(randint(1, 45))
+
+'''
+Quiz) 당신은 최근 코딩 스터디 모임을 새로 만들었습니다.
+월 4회 스터디를 하는데 3번은 온라인, 1번은 오프라인입니다.
+아래 조건에 맞는 오프라인 모임 날짜를 정해주는 프로그램을 만드세요.
+
+조건 1 : 랜덤으로 날짜 뽑음
+조건 2 : 월별 날짜는 다름을 감안하여 최소 일수인 28 이내로 정함
+조건 3 : 매월 1~3일은 스터디 준비를 해야 하므로 제외
+'''
+
+day = randint(4, 28)
+day2 = int((random() * 28) + 1)
+day3 = randrange(1, 28)
+print("오프라인 스터디 모임 날짜는 매월 " + str(day) + "일로 선정되었습니다.")
+
+# 문자열
+sentence = '나는 소년입니다'
+print(sentence)
+sentence2 = "파이썬은 쉬워요"
+print(sentence2)
+sentence3 = """
+나는 소년이고,
+파이썬은 쉬워요
+"""
+# 여러 줄을 변수에 담을 수도 있다
+print(sentence3)
